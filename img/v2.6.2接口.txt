@@ -1,0 +1,39 @@
+1.课程数
+GET http://preschool-resource-box.beta.101.com/v2.0/brand/course/count/490094046866
+请求参数:无
+响应结果:
+2
+
+2.空间大小
+GET http://preschool-resource-box.beta.101.com/v2.0/disk/statistics/space/detail?school_id=5bfefbafb7d9445fb1d13177ad6ac7f4
+请求参数:无
+school_id: 5bfefbafb7d9445fb1d13177ad6ac7f4
+响应结果:
+{
+  "tenant_id": "100124085",
+  "container_id": "preproduction_100124085",
+  "root_resource_id": "53350599-673b-4189-b173-f5667bf8e6f2",
+  "total_space": 1610612736000,
+  "used_space": 513089077,
+  "extend_space": 0,
+  "extend_begin_at": null,
+  "extend_end_at": null
+}
+
+3.资源类型分布
+GET http://preschool-resource-box.beta.101.com/v2.0/disk/statistics/type
+请求参数:无
+响应结果:
+{
+  "other": 2,
+  "total": 28,
+  "document": 10,
+  "audio": 0,
+  "video": 10,
+  "picture": 6
+}
+
+/v2.0/disk/statistics/file
+/v2.0/disk/statistics/space
+/v2.0/disk/statistics/type
+
